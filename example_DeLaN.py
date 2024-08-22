@@ -8,7 +8,8 @@ import matplotlib as mp
 try:
     mp.use("Qt5Agg")
     mp.rc('text', usetex=True)
-    mp.rcParams['text.latex.preamble'] = [r"\usepackage{amsmath}"]
+    mp.rcParams['text.latex.preamble'] = r"\usepackage{amsmath}"
+
 
 except ImportError:
     pass
